@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5BFCE6B2C706E8100BB7FBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCE6A2C706E8100BB7FBA /* AppDelegate.swift */; };
+		F5BFCE722C706E8100BB7FBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BFCE702C706E8100BB7FBA /* Main.storyboard */; };
+		F5BFCE752C706E8100BB7FBA /* PaymentTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCE732C706E8100BB7FBA /* PaymentTask.xcdatamodeld */; };
+		F5BFCE772C706E8100BB7FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5BFCE762C706E8100BB7FBA /* Assets.xcassets */; };
+		F5BFCE7A2C706E8100BB7FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BFCE782C706E8100BB7FBA /* LaunchScreen.storyboard */; };
+		F5BFCE8D2C70A78B00BB7FBA /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCE8C2C70A78B00BB7FBA /* DashboardVC.swift */; };
+		F5BFCE902C70A7DB00BB7FBA /* PaymentAmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCE8F2C70A7DB00BB7FBA /* PaymentAmountVC.swift */; };
+		F5BFCE922C70A82C00BB7FBA /* PaymentContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCE912C70A82C00BB7FBA /* PaymentContactVC.swift */; };
+		F5BFCE942C70A86400BB7FBA /* PaymentSendPinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCE932C70A86400BB7FBA /* PaymentSendPinVC.swift */; };
+		F5BFCE962C70A88500BB7FBA /* PaymentSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCE952C70A88500BB7FBA /* PaymentSuccessVC.swift */; };
+		F5BFCE9C2C70C7FF00BB7FBA /* DashBoardListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCE9A2C70C7FF00BB7FBA /* DashBoardListTVC.swift */; };
+		F5BFCE9D2C70C7FF00BB7FBA /* DashBoardListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5BFCE9B2C70C7FF00BB7FBA /* DashBoardListTVC.xib */; };
+		F5BFCEA02C70C82A00BB7FBA /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCE9F2C70C82A00BB7FBA /* DashboardModel.swift */; };
+		F5BFCEA32C70C8A200BB7FBA /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCEA22C70C8A200BB7FBA /* DashboardViewModel.swift */; };
+		F5BFCEA72C70D41200BB7FBA /* MyTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCEA62C70D41200BB7FBA /* MyTabBarVC.swift */; };
+		F5BFCEAB2C70DB6400BB7FBA /* PaymentAmountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCEAA2C70DB6400BB7FBA /* PaymentAmountViewModel.swift */; };
+		F5BFCEAE2C70DBAC00BB7FBA /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCEAD2C70DBAC00BB7FBA /* PaymentModel.swift */; };
+		F5BFCEB32C70E0D100BB7FBA /* PaymentSearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCEB12C70E0D100BB7FBA /* PaymentSearchTVC.swift */; };
+		F5BFCEB42C70E0D100BB7FBA /* PaymentSearchTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5BFCEB22C70E0D100BB7FBA /* PaymentSearchTVC.xib */; };
+		F5BFCEB82C70E29700BB7FBA /* PaymentRecentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCEB62C70E29700BB7FBA /* PaymentRecentTVC.swift */; };
+		F5BFCEB92C70E29700BB7FBA /* PaymentRecentTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5BFCEB72C70E29700BB7FBA /* PaymentRecentTVC.xib */; };
+		F5BFCEC12C70EA7300BB7FBA /* PaymentConatctListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCEC02C70EA7300BB7FBA /* PaymentConatctListViewModel.swift */; };
+		F5BFCEC42C70EB3600BB7FBA /* PaymentContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCEC32C70EB3600BB7FBA /* PaymentContactModel.swift */; };
+		F5BFCEC82C70EFCA00BB7FBA /* PaymentListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BFCEC62C70EFCA00BB7FBA /* PaymentListTVC.swift */; };
+		F5BFCEC92C70EFCA00BB7FBA /* PaymentListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5BFCEC72C70EFCA00BB7FBA /* PaymentListTVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F5BFCE672C706E8100BB7FBA /* PaymentTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5BFCE6A2C706E8100BB7FBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5BFCE712C706E8100BB7FBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5BFCE742C706E8100BB7FBA /* PaymentTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PaymentTask.xcdatamodel; sourceTree = "<group>"; };
+		F5BFCE762C706E8100BB7FBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5BFCE792C706E8100BB7FBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5BFCE7B2C706E8100BB7FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5BFCE8C2C70A78B00BB7FBA /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		F5BFCE8F2C70A7DB00BB7FBA /* PaymentAmountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAmountVC.swift; sourceTree = "<group>"; };
+		F5BFCE912C70A82C00BB7FBA /* PaymentContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentContactVC.swift; sourceTree = "<group>"; };
+		F5BFCE932C70A86400BB7FBA /* PaymentSendPinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSendPinVC.swift; sourceTree = "<group>"; };
+		F5BFCE952C70A88500BB7FBA /* PaymentSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessVC.swift; sourceTree = "<group>"; };
+		F5BFCE9A2C70C7FF00BB7FBA /* DashBoardListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardListTVC.swift; sourceTree = "<group>"; };
+		F5BFCE9B2C70C7FF00BB7FBA /* DashBoardListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardListTVC.xib; sourceTree = "<group>"; };
+		F5BFCE9F2C70C82A00BB7FBA /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
+		F5BFCEA22C70C8A200BB7FBA /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		F5BFCEA62C70D41200BB7FBA /* MyTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarVC.swift; sourceTree = "<group>"; };
+		F5BFCEAA2C70DB6400BB7FBA /* PaymentAmountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAmountViewModel.swift; sourceTree = "<group>"; };
+		F5BFCEAD2C70DBAC00BB7FBA /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
+		F5BFCEB12C70E0D100BB7FBA /* PaymentSearchTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSearchTVC.swift; sourceTree = "<group>"; };
+		F5BFCEB22C70E0D100BB7FBA /* PaymentSearchTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentSearchTVC.xib; sourceTree = "<group>"; };
+		F5BFCEB62C70E29700BB7FBA /* PaymentRecentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRecentTVC.swift; sourceTree = "<group>"; };
+		F5BFCEB72C70E29700BB7FBA /* PaymentRecentTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentRecentTVC.xib; sourceTree = "<group>"; };
+		F5BFCEC02C70EA7300BB7FBA /* PaymentConatctListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentConatctListViewModel.swift; sourceTree = "<group>"; };
+		F5BFCEC32C70EB3600BB7FBA /* PaymentContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentContactModel.swift; sourceTree = "<group>"; };
+		F5BFCEC62C70EFCA00BB7FBA /* PaymentListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListTVC.swift; sourceTree = "<group>"; };
+		F5BFCEC72C70EFCA00BB7FBA /* PaymentListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentListTVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5BFCE642C706E8100BB7FBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5BFCE5E2C706E8100BB7FBA = {
+			isa = PBXGroup;
+			children = (
+				F5BFCE692C706E8100BB7FBA /* PaymentTask */,
+				F5BFCE682C706E8100BB7FBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5BFCE682C706E8100BB7FBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCE672C706E8100BB7FBA /* PaymentTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5BFCE692C706E8100BB7FBA /* PaymentTask */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCE6A2C706E8100BB7FBA /* AppDelegate.swift */,
+				F5BFCEA52C70D3F000BB7FBA /* MyTabBar Page */,
+				F5BFCE812C70A60C00BB7FBA /* Payment Page */,
+				F5BFCE702C706E8100BB7FBA /* Main.storyboard */,
+				F5BFCE762C706E8100BB7FBA /* Assets.xcassets */,
+				F5BFCE782C706E8100BB7FBA /* LaunchScreen.storyboard */,
+				F5BFCE7B2C706E8100BB7FBA /* Info.plist */,
+				F5BFCE732C706E8100BB7FBA /* PaymentTask.xcdatamodeld */,
+			);
+			path = PaymentTask;
+			sourceTree = "<group>";
+		};
+		F5BFCE812C70A60C00BB7FBA /* Payment Page */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCE862C70A63200BB7FBA /* Model */,
+				F5BFCE852C70A62F00BB7FBA /* View */,
+				F5BFCE842C70A62B00BB7FBA /* ViewModel */,
+				F5BFCE822C70A61800BB7FBA /* Controller */,
+			);
+			name = "Payment Page";
+			sourceTree = "<group>";
+		};
+		F5BFCE822C70A61800BB7FBA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCE8B2C70A6D800BB7FBA /* DashBoard */,
+				F5BFCE8A2C70A6D400BB7FBA /* PaymentValue */,
+				F5BFCE892C70A6CD00BB7FBA /* PayeeNotes  */,
+				F5BFCE882C70A6C500BB7FBA /* PinEnter */,
+				F5BFCE872C70A6B200BB7FBA /* Success */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F5BFCE842C70A62B00BB7FBA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCEA12C70C88700BB7FBA /* DashboardViewModel */,
+				F5BFCEA92C70DB3A00BB7FBA /* PaymentAmountViewModel */,
+				F5BFCEBF2C70EA4400BB7FBA /* PaymentContactListViewModel */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5BFCE852C70A62F00BB7FBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCEAF2C70E09100BB7FBA /* PaymentContactListCells */,
+				F5BFCE972C70C3EC00BB7FBA /* DashboardListCell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F5BFCE862C70A63200BB7FBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCEC22C70EB1A00BB7FBA /* PaymentContactModel */,
+				F5BFCEAC2C70DB9C00BB7FBA /* PaymentAmtModel */,
+				F5BFCE9E2C70C81000BB7FBA /* DashboardModel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F5BFCE872C70A6B200BB7FBA /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCE952C70A88500BB7FBA /* PaymentSuccessVC.swift */,
+			);
+			name = Success;
+			sourceTree = "<group>";
+		};
+		F5BFCE882C70A6C500BB7FBA /* PinEnter */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCE932C70A86400BB7FBA /* PaymentSendPinVC.swift */,
+			);
+			name = PinEnter;
+			sourceTree = "<group>";
+		};
+		F5BFCE892C70A6CD00BB7FBA /* PayeeNotes  */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCE912C70A82C00BB7FBA /* PaymentContactVC.swift */,
+			);
+			name = "PayeeNotes ";
+			sourceTree = "<group>";
+		};
+		F5BFCE8A2C70A6D400BB7FBA /* PaymentValue */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCE8F2C70A7DB00BB7FBA /* PaymentAmountVC.swift */,
+			);
+			name = PaymentValue;
+			sourceTree = "<group>";
+		};
+		F5BFCE8B2C70A6D800BB7FBA /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCE8C2C70A78B00BB7FBA /* DashboardVC.swift */,
+			);
+			name = DashBoard;
+			sourceTree = "<group>";
+		};
+		F5BFCE972C70C3EC00BB7FBA /* DashboardListCell */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCE9A2C70C7FF00BB7FBA /* DashBoardListTVC.swift */,
+				F5BFCE9B2C70C7FF00BB7FBA /* DashBoardListTVC.xib */,
+			);
+			name = DashboardListCell;
+			sourceTree = "<group>";
+		};
+		F5BFCE9E2C70C81000BB7FBA /* DashboardModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCE9F2C70C82A00BB7FBA /* DashboardModel.swift */,
+			);
+			name = DashboardModel;
+			sourceTree = "<group>";
+		};
+		F5BFCEA12C70C88700BB7FBA /* DashboardViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCEA22C70C8A200BB7FBA /* DashboardViewModel.swift */,
+			);
+			name = DashboardViewModel;
+			sourceTree = "<group>";
+		};
+		F5BFCEA52C70D3F000BB7FBA /* MyTabBar Page */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCEA62C70D41200BB7FBA /* MyTabBarVC.swift */,
+			);
+			name = "MyTabBar Page";
+			sourceTree = "<group>";
+		};
+		F5BFCEA92C70DB3A00BB7FBA /* PaymentAmountViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCEAA2C70DB6400BB7FBA /* PaymentAmountViewModel.swift */,
+			);
+			name = PaymentAmountViewModel;
+			sourceTree = "<group>";
+		};
+		F5BFCEAC2C70DB9C00BB7FBA /* PaymentAmtModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCEAD2C70DBAC00BB7FBA /* PaymentModel.swift */,
+			);
+			name = PaymentAmtModel;
+			sourceTree = "<group>";
+		};
+		F5BFCEAF2C70E09100BB7FBA /* PaymentContactListCells */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCEC52C70EFA300BB7FBA /* PaymentListTVC */,
+				F5BFCEB52C70E26E00BB7FBA /* PaymentRecentTVC */,
+				F5BFCEB02C70E0AE00BB7FBA /* PaymentSearchTVC */,
+			);
+			name = PaymentContactListCells;
+			sourceTree = "<group>";
+		};
+		F5BFCEB02C70E0AE00BB7FBA /* PaymentSearchTVC */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCEB12C70E0D100BB7FBA /* PaymentSearchTVC.swift */,
+				F5BFCEB22C70E0D100BB7FBA /* PaymentSearchTVC.xib */,
+			);
+			name = PaymentSearchTVC;
+			sourceTree = "<group>";
+		};
+		F5BFCEB52C70E26E00BB7FBA /* PaymentRecentTVC */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCEB62C70E29700BB7FBA /* PaymentRecentTVC.swift */,
+				F5BFCEB72C70E29700BB7FBA /* PaymentRecentTVC.xib */,
+			);
+			name = PaymentRecentTVC;
+			sourceTree = "<group>";
+		};
+		F5BFCEBF2C70EA4400BB7FBA /* PaymentContactListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCEC02C70EA7300BB7FBA /* PaymentConatctListViewModel.swift */,
+			);
+			path = PaymentContactListViewModel;
+			sourceTree = "<group>";
+		};
+		F5BFCEC22C70EB1A00BB7FBA /* PaymentContactModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCEC32C70EB3600BB7FBA /* PaymentContactModel.swift */,
+			);
+			name = PaymentContactModel;
+			sourceTree = "<group>";
+		};
+		F5BFCEC52C70EFA300BB7FBA /* PaymentListTVC */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFCEC62C70EFCA00BB7FBA /* PaymentListTVC.swift */,
+				F5BFCEC72C70EFCA00BB7FBA /* PaymentListTVC.xib */,
+			);
+			name = PaymentListTVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5BFCE662C706E8100BB7FBA /* PaymentTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5BFCE7E2C706E8100BB7FBA /* Build configuration list for PBXNativeTarget "PaymentTask" */;
+			buildPhases = (
+				F5BFCE632C706E8100BB7FBA /* Sources */,
+				F5BFCE642C706E8100BB7FBA /* Frameworks */,
+				F5BFCE652C706E8100BB7FBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaymentTask;
+			productName = PaymentTask;
+			productReference = F5BFCE672C706E8100BB7FBA /* PaymentTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5BFCE5F2C706E8100BB7FBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					F5BFCE662C706E8100BB7FBA = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = F5BFCE622C706E8100BB7FBA /* Build configuration list for PBXProject "PaymentTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5BFCE5E2C706E8100BB7FBA;
+			productRefGroup = F5BFCE682C706E8100BB7FBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5BFCE662C706E8100BB7FBA /* PaymentTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5BFCE652C706E8100BB7FBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5BFCE7A2C706E8100BB7FBA /* LaunchScreen.storyboard in Resources */,
+				F5BFCE772C706E8100BB7FBA /* Assets.xcassets in Resources */,
+				F5BFCEC92C70EFCA00BB7FBA /* PaymentListTVC.xib in Resources */,
+				F5BFCE9D2C70C7FF00BB7FBA /* DashBoardListTVC.xib in Resources */,
+				F5BFCE722C706E8100BB7FBA /* Main.storyboard in Resources */,
+				F5BFCEB42C70E0D100BB7FBA /* PaymentSearchTVC.xib in Resources */,
+				F5BFCEB92C70E29700BB7FBA /* PaymentRecentTVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5BFCE632C706E8100BB7FBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5BFCE752C706E8100BB7FBA /* PaymentTask.xcdatamodeld in Sources */,
+				F5BFCEA32C70C8A200BB7FBA /* DashboardViewModel.swift in Sources */,
+				F5BFCEAE2C70DBAC00BB7FBA /* PaymentModel.swift in Sources */,
+				F5BFCEA02C70C82A00BB7FBA /* DashboardModel.swift in Sources */,
+				F5BFCEC82C70EFCA00BB7FBA /* PaymentListTVC.swift in Sources */,
+				F5BFCEC42C70EB3600BB7FBA /* PaymentContactModel.swift in Sources */,
+				F5BFCE8D2C70A78B00BB7FBA /* DashboardVC.swift in Sources */,
+				F5BFCEC12C70EA7300BB7FBA /* PaymentConatctListViewModel.swift in Sources */,
+				F5BFCE9C2C70C7FF00BB7FBA /* DashBoardListTVC.swift in Sources */,
+				F5BFCEB82C70E29700BB7FBA /* PaymentRecentTVC.swift in Sources */,
+				F5BFCEB32C70E0D100BB7FBA /* PaymentSearchTVC.swift in Sources */,
+				F5BFCEAB2C70DB6400BB7FBA /* PaymentAmountViewModel.swift in Sources */,
+				F5BFCE962C70A88500BB7FBA /* PaymentSuccessVC.swift in Sources */,
+				F5BFCE6B2C706E8100BB7FBA /* AppDelegate.swift in Sources */,
+				F5BFCE922C70A82C00BB7FBA /* PaymentContactVC.swift in Sources */,
+				F5BFCE902C70A7DB00BB7FBA /* PaymentAmountVC.swift in Sources */,
+				F5BFCEA72C70D41200BB7FBA /* MyTabBarVC.swift in Sources */,
+				F5BFCE942C70A86400BB7FBA /* PaymentSendPinVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5BFCE702C706E8100BB7FBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5BFCE712C706E8100BB7FBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5BFCE782C706E8100BB7FBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5BFCE792C706E8100BB7FBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5BFCE7C2C706E8100BB7FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5BFCE7D2C706E8100BB7FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5BFCE7F2C706E8100BB7FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PaymentTask/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PaymentTask;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PaymentTask.PaymentTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5BFCE802C706E8100BB7FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PaymentTask/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PaymentTask;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PaymentTask.PaymentTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5BFCE622C706E8100BB7FBA /* Build configuration list for PBXProject "PaymentTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5BFCE7C2C706E8100BB7FBA /* Debug */,
+				F5BFCE7D2C706E8100BB7FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5BFCE7E2C706E8100BB7FBA /* Build configuration list for PBXNativeTarget "PaymentTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5BFCE7F2C706E8100BB7FBA /* Debug */,
+				F5BFCE802C706E8100BB7FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5BFCE732C706E8100BB7FBA /* PaymentTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5BFCE742C706E8100BB7FBA /* PaymentTask.xcdatamodel */,
+			);
+			currentVersion = F5BFCE742C706E8100BB7FBA /* PaymentTask.xcdatamodel */;
+			path = PaymentTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F5BFCE5F2C706E8100BB7FBA /* Project object */;
+}
